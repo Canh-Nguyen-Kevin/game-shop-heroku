@@ -1,6 +1,8 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "proxy": "https://game-shop-api.herokuapp.com/",
+  "homepage": "https://game-shop-heroku.herokuapp.com/",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",

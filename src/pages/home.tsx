@@ -18,9 +18,7 @@ const Home = () => {
       setLoading(true);
       dispatch(getLoading(true));
       try {
-        const response: any = await axios.get(
-          "https://game-shop-api.herokuapp.com/products/"
-        );
+        const response: any = await axios.get("/products/");
         dispatch(getAllProducts(response.data));
       } catch (err) {
         console.log(err);
