@@ -29,7 +29,9 @@ const ProductDetail = () => {
   const fetchProductDetail = async () => {
     setIsLoading(true);
     try {
-      const response: any = await axios.get(`/products/${productId}`);
+      const response: any = await axios.get(
+        `https://game-shop-api.herokuapp.com/products/${productId}`
+      );
       if (response.data) setItem(response.data);
     } catch (err) {
       console.log(err);
