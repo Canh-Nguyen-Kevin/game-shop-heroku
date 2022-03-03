@@ -120,34 +120,20 @@ const AddressPicker = (props: any) => {
                 return <Option value={district.code}>{district.name}</Option>;
               })
             : null}
-          <Select
-            showSearch
-            placeholder="Ward..."
-            defaultActiveFirstOption={true}
-            onChange={(value: number) => setWardCode(value)}
-          >
-            {wards
-              ? wards.map((ward: any) => {
-                  return <Option value={ward.code}>{ward.name}</Option>;
-                })
-              : null}
-          </Select>
         </Select>
 
-        {/* <Select
+        <Select
           showSearch
           placeholder="Ward..."
-          
           defaultActiveFirstOption={true}
           onChange={(value: number) => setWardCode(value)}
-          
         >
           {wards
             ? wards.map((ward: any) => {
                 return <Option value={ward.code}>{ward.name}</Option>;
               })
             : null}
-        </Select> */}
+        </Select>
       </Form.Item>
     </>
   );
