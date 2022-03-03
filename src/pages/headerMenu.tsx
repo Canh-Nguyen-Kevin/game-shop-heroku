@@ -182,7 +182,7 @@ export const ItemsInCart = () => {
                 <Menu.Item key={product.id}>
                   <Image
                     width={30}
-                    src={`/${product.img[0]}`}
+                    src={`${product.img[0]}`}
                     alt={product.name}
                   />
                   <span>{product.description}</span>
