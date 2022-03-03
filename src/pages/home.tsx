@@ -19,7 +19,7 @@ const Home = () => {
       dispatch(getLoading(true));
       try {
         const response: any = await axios.get(
-          "https://cors-anywhere.herokuapp.com/https://game-shop-api.herokuapp.com//products/"
+          "https://cors-anywhere.herokuapp.com/https://game-shop-api.herokuapp.com/products/"
         );
         dispatch(getAllProducts(response.data));
       } catch (err) {
