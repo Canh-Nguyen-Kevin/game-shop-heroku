@@ -83,6 +83,18 @@ $purple: #120338;
   width: 100%;
   margin-top: 10px;
   background-color: white;
+
+  .footer-content {
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    &:hover {
+      color: $red;
+      background-color: $gray;
+    }
+  }
 }
 
 .menu {
